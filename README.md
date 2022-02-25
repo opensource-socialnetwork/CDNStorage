@@ -16,3 +16,7 @@ If you change your storage system there will be issue for deleting the existing 
 **FURTHER**
 
  This component is a beta stage. May show unexpcted behaviour. So again dont use it for production yet. 
+
+**Making your component compitable with CDN**
+
+https://www.opensource-socialnetwork.org/documentation/view/5818/make-your-component-compatible-with-cdn-optional
