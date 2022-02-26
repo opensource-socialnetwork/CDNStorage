@@ -11,7 +11,7 @@ Please don't use it for your production sites until OSSN 6.2 released.
 
 **NOTE**
 
-If you change your storage system there will be issue for deleting the existing files from system.  So decided at once about which one you would like you.  
+If you change your storage system there will be issue for deleting the existing files from system.  So decided at once about which one you would like use.  
 
 **FURTHER**
 
