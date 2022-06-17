@@ -42,6 +42,7 @@
     <?php
 		echo ossn_plugin_view('input/dropdown', array(
 					'name' => 'status',
+					'value' => $site->getSettings('cdnstorage.status'),
 					'options' => array(
 						''	=> '',
 						'enabled' => ossn_print('cdnstorage:enabled'),
@@ -51,5 +52,5 @@
 	?>
 </div>
 <div>
-	<input type="submit" value="<?php echo ossn_print('save');?>" />
+	<input type="submit" class="btn btn-success btn-sm" value="<?php echo ossn_print('save');?>" />
 </div>

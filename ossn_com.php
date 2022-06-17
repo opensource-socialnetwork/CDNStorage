@@ -44,9 +44,10 @@ function cdn_file_delete_checks($hook, $type, $params): void {
 				$localpath      = array_reverse($localpath);
 				$localpath      = implode('/', $localpath) . '/';
 				$dir_local_path = "{$file->type}/{$file->owner_guid}/{$localpath}";
-				
 				$cdn = new \CDNStorage\Controller($dir_local_path, $file->guid);
-				$cdn->delete($fileName);
+				//because its a file hash based on guid delete entiry directory from cdn
+				//as photos component store multiple size deleting orginal file may leave those custom images in place
+				$cdn->delete(true); 
 		}
 }
 /**

@@ -66,7 +66,11 @@ class Controller {
 				if(!empty($path)) {
 						$bucket = $this->bucketName;
 						try {
-								$this->client->deleteMatchingObjects($bucket, $this->dir_local_path . $path);
+								$key = $this->dir_local_path . $path;
+								if($path === true){
+									$key = $this->dir_local_path;	
+								}
+								$this->client->deleteMatchingObjects($bucket, $key);
 						} catch (DeleteMultipleObjectsException $exception) {
 								return false;
 						}
